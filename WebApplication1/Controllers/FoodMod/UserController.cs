@@ -161,7 +161,6 @@ public class AccountsController : ControllerBase
 
         if (findUser == null) throw new Exception($"User {request.Email} not found");
 
-        //await _userManager.AddToRoleAsync(findUser, "Member");
             
         return await Authenticate(new AuthRequest
         {
